@@ -92,7 +92,7 @@
   .hero-title .sep { color: var(--green); margin: 0 12px; }
   .hero-bio { font-size: 17px; color: var(--text); line-height: 1.7; max-width: 680px; font-weight: 400; border-left: 2px solid var(--green); padding-left: 20px; margin-bottom: 40px; opacity: 0; animation: fadeInUp 0.6s 0.8s forwards; }
   .hero-cta { display: flex; gap: 16px; flex-wrap: wrap; opacity: 0; animation: fadeInUp 0.6s 1s forwards; }
-  .btn { font-family: var(--mono); font-size: 12px; letter-spacing: 2px; text-transform: uppercase; text-decoration: none; padding: 12px 28px; border: 1px solid var(--green); color: var(--green); background: transparent; cursor: pointer; position: relative; overflow: hidden; transition: color 0.3s; clip-path: polygon(8px 0%, 100% 0%, calc(100% - 8px) 100%, 0% 100%); }
+  .btn { font-family: var(--mono); font-size: 12px; letter-spacing: 2px; text-transform: uppercase; text-decoration: none; padding: 12px 28px; border: 1px solid var(--green); color: var(--green); background: transparent; cursor: pointer; position: relative; overflow: hidden; transition: color 0.3s; clip-path: polygon(8px 0%, 100% 0%, calc(100% - 8px) 100%, 0% 100%); display: inline-block; }
   .btn::before { content: ''; position: absolute; inset: 0; background: var(--green); transform: scaleX(0); transform-origin: left; transition: transform 0.3s; }
   .btn:hover { color: var(--bg); }
   .btn:hover::before { transform: scaleX(1); }
@@ -209,18 +209,19 @@
     <li><a href="#skills">Skills</a></li>
     <li><a href="#experience">Experience</a></li>
     <li><a href="#projects">Projects</a></li>
+    <li><a href="#certs">Certs</a></li>
     <li><a href="#contact">Contact</a></li>
+    <li><a href="https://github.com/yukeshbala08" target="_blank">[gh] GitHub</a></li>
   </ul>
   <div class="status-dot"><div class="dot"></div>AVAILABLE FOR HIRE</div>
 </nav>
 
 <section id="hero">
   <div class="grid-bg"></div>
-  <div class="hero-corner tl">[ SYS::INIT ] — PORTFOLIO_v2.5.1</div>
+  <div class="hero-corner tl">[ SYS::INIT ] — P0rTf0Li0_v2.5.1</div>
   <div class="hero-corner tr">LAT: 13.0827 // LON: 80.2707<br>CHENNAI :: INDIA</div>
   <div class="hero-corner bl">SEC_LEVEL :: CLASSIFIED</div>
-  <div class="hero-corner br" id="hex-corner">ACCESS :: GRANTED</div>
-
+  <div class="hero-corner br">ACCESS :: GRANTED</div>
   <div class="hero-content">
     <div class="hero-tag">// Security Analyst &nbsp;·&nbsp; Penetration Tester &nbsp;·&nbsp; Offensive Security</div>
     <h1 class="hero-name">
@@ -236,6 +237,7 @@
     <div class="hero-cta">
       <a href="#projects" class="btn"><span>View Projects</span></a>
       <a href="mailto:yukeshb255@gmail.com" class="btn btn-ghost"><span>Contact Me</span></a>
+      <a href="https://github.com/yukeshbala08" target="_blank" class="btn btn-ghost"><span>[gh] GitHub</span></a>
     </div>
   </div>
 </section>
@@ -261,6 +263,7 @@
       <div class="t-out">&nbsp;&nbsp;<span class="t-key">"location"</span>: <span class="t-val">"Chennai, Tamil Nadu, India"</span>,</div>
       <div class="t-out">&nbsp;&nbsp;<span class="t-key">"phone"</span>: <span class="t-val">"+91 8608319666"</span>,</div>
       <div class="t-out">&nbsp;&nbsp;<span class="t-key">"email"</span>: <span class="t-val">"yukeshb255@gmail.com"</span>,</div>
+      <div class="t-out">&nbsp;&nbsp;<span class="t-key">"github"</span>: <span class="t-val">"github.com/yukeshbala08"</span>,</div>
       <div class="t-out">&nbsp;&nbsp;<span class="t-key">"education"</span>: <span class="t-val">"B.E. CSE (Cybersecurity) — KCG College of Technology | CGPA: 7.9"</span>,</div>
       <div class="t-out">&nbsp;&nbsp;<span class="t-key">"specialization"</span>: [<span class="t-val">"Web AppSec"</span>, <span class="t-val">"VAPT"</span>, <span class="t-val">"Red Teaming"</span>, <span class="t-val">"AI/ML Security"</span>],</div>
       <div class="t-out">&nbsp;&nbsp;<span class="t-key">"status"</span>: <span class="t-val">"open_to_opportunities"</span></div>
@@ -391,7 +394,7 @@
   <div class="projects-grid">
     <div class="proj-card reveal">
       <div class="proj-num">PROJECT_01 // VAPT</div>
-      <div class="proj-title">VAPT — HindustanSchools & eBay</div>
+      <div class="proj-title"><a href="https://drive.google.com/drive/folders/1c9Qs5n9MwXZuGSNWVrpv2g7tgiX6ZWrl?usp=sharing" target="_blank" style="color: inherit; text-decoration: none;"> VAPT — HindustanSchools &amp; eBay </a></div>
       <div class="proj-desc">Web application security assessments aligned with OWASP Top 10 on live production targets. Identified critical authentication bypass, input validation flaws, and broken access control vulnerabilities with full CVSS-scored reporting.</div>
       <div class="proj-tags">
         <span class="tag">Burp Suite</span><span class="tag">SQLMap</span>
@@ -400,8 +403,8 @@
     </div>
     <div class="proj-card reveal">
       <div class="proj-num">PROJECT_02 // DEFENSIVE</div>
-      <div class="proj-title">AI-Driven IDS/IPS & Zero Trust Firewall</div>
-      <div class="proj-desc">Intelligent Intrusion Detection & Prevention System using ML-based anomaly detection and behavioral analysis. Features immutable logging for tamper-resistant audit trails and automated real-time threat correlation pipeline.</div>
+      <div class="proj-title">D.E.X.A.R.C &amp; Zero Trust Firewall</div>
+      <div class="proj-desc">Developed D.E.X.A.R.C, an AI-driven IDS/IPS system with real-time anomaly detection and behavioral analysis. Integrated Zero Trust Firewall principles with immutable log storage using hash chaining and encryption to prevent tampering. Automated threat detection and response pipeline reduces incident response time and enhances system-level security visibility.</div>
       <div class="proj-tags">
         <span class="tag">Python</span><span class="tag">ML</span>
         <span class="tag">Anomaly Detection</span><span class="tag">Zero Trust</span>
@@ -409,11 +412,54 @@
     </div>
     <div class="proj-card reveal">
       <div class="proj-num">PROJECT_03 // AUTOMATION</div>
-      <div class="proj-title">Security Automation & Recon Toolkit</div>
+      <div class="proj-title">Security Automation &amp; Recon Toolkit</div>
       <div class="proj-desc">Python-based automation for reconnaissance, subdomain enumeration, endpoint discovery, and attack surface mapping. Reduced manual recon time by 40% with integrated Nmap, Gobuster, and FUFF output parsers for unified reporting.</div>
       <div class="proj-tags">
         <span class="tag">Python</span><span class="tag">Nmap</span>
         <span class="tag">Gobuster</span><span class="tag">Automation</span>
+      </div>
+    </div>
+    <div class="proj-card reveal">
+      <div class="proj-num">PROJECT_04 // BUG BOUNTY</div>
+      <div class="proj-title">
+        <a href="https://drive.google.com/drive/folders/12uMjtVdLYEh2pA6RgxHVEU_mI4yQdgpb?usp=sharing" 
+          target="_blank" 
+          style="color: inherit; text-decoration: none;">
+          Bug Bounty Program — HackerOne Report
+        </a>
+      </div>
+      <div class="proj-desc">Conducted real-world bug bounty reconnaissance and vulnerability assessment on live targets. Identified security misconfigurations and potential high-impact vulnerabilities through systematic enumeration, endpoint discovery, and manual testing aligned with industry standards.
+      </div>
+      <div class="proj-tags">
+        <span class="tag">HackerOne</span>
+        <span class="tag">Recon</span>
+        <span class="tag">Bug Bounty</span>
+        <span class="tag">Enumeration</span>
+        <span class="tag">Web Security</span>
+      </div>
+    </div>
+    <div class="proj-card reveal">
+      <div class="proj-num">PROJECT_05 // MALWARE ANALYSIS</div>
+
+      <div class="proj-title">
+        <a href="https://drive.google.com/drive/folders/1flFmGkK6v79_7udx35uM5fSrt9cuxbZ4" 
+          target="_blank" 
+          style="color: inherit; text-decoration: none;">
+          Malware Analysis — AndroRAT & MobSF
+        </a>
+      </div>
+
+      <div class="proj-desc">
+        Performed static and dynamic malware analysis on Android-based Remote Access Trojan (AndroRAT) using Mobile Security Framework (MobSF).Extracted indicators of compromise (IOCs), permissions abuse, and hardcoded endpoints through APK decompilation and runtime monitoring.
+      </div>
+
+      <div class="proj-tags">
+        <span class="tag">Malware Analysis</span>
+        <span class="tag">AndroRAT</span>
+        <span class="tag">MobSF</span>
+        <span class="tag">Static Analysis</span>
+        <span class="tag">Dynamic Analysis</span>
+        <span class="tag">Android Security</span>
       </div>
     </div>
   </div>
@@ -429,7 +475,7 @@
     <div class="cert-item reveal"><div class="cert-icon">[★]</div><div class="cert-text">Vulnerability Assessment and Penetration Testing (VAPT) — Datayaan x KCG College of Technology</div></div>
     <div class="cert-item reveal"><div class="cert-icon">[★]</div><div class="cert-text">Introduction to Cybersecurity — Cisco Networking Academy</div></div>
     <div class="cert-item reveal"><div class="cert-icon">[★]</div><div class="cert-text">CCNA: Introduction to Networks — Cisco Networking Academy</div></div>
-    <div class="cert-item reveal"><div class="cert-icon">[★]</div><div class="cert-text">Python Essentials 1 & 2 — Cisco / Python Institute</div></div>
+    <div class="cert-item reveal"><div class="cert-icon">[★]</div><div class="cert-text">Python Essentials 1 &amp; 2 — Cisco / Python Institute</div></div>
     <div class="cert-item reveal"><div class="cert-icon">[★]</div><div class="cert-text">Python Data Frameworks — Elewayte</div></div>
     <div class="cert-item reveal"><div class="cert-icon">[★]</div><div class="cert-text">Privacy and Security in Online Social Media — NPTEL</div></div>
   </div>
@@ -475,15 +521,16 @@
       <a href="mailto:yukeshb255@gmail.com" class="contact-link"><span>[✉]</span> yukeshb255@gmail.com</a>
       <a href="tel:+918608319666" class="contact-link"><span>[☎]</span> +91 8608319666</a>
       <a href="https://linkedin.com/in/yukesh-bala-9880732b0" target="_blank" class="contact-link"><span>[in]</span> LinkedIn Profile</a>
+      <a href="https://github.com/yukeshbala08" target="_blank" class="contact-link"><span>[gh]</span> GitHub Profile</a>
     </div>
     <a href="mailto:yukeshb255@gmail.com" class="btn"><span>INITIATE CONTACT</span></a>
   </div>
 </section>
 
 <footer>
-  <span>© 2026 YUKESH BALA M — ALL RIGHTS RESERVED</span>
+  <span>© 2026 YUKESH BALA M — ALL RIGHTS C0MPR0M1S3D</span>
   <span>BUILT WITH <span style="color:var(--green)">&#9829;</span> &amp; KALI LINUX</span>
-  <span>SEC_LEVEL :: PUBLIC</span>
+  <span>SEC_LEVEL :: BREACHED!!</span>
 </footer>
 
 <script>
@@ -491,17 +538,12 @@
   const obs = new IntersectionObserver((entries) => {
     entries.forEach((e, i) => {
       if (e.isIntersecting) {
-        setTimeout(() => e.target.classList.add('visible'), i * 70);
+        setTimeout(() => e.target.classList.add('visible'), i * 80);
+        obs.unobserve(e.target);
       }
     });
-  }, { threshold: 0.08 });
+  }, { threshold: 0.1 });
   reveals.forEach(r => obs.observe(r));
-
-  const hexCorner = document.getElementById('hex-corner');
-  setInterval(() => {
-    const h = () => Math.floor(Math.random()*256).toString(16).padStart(2,'0').toUpperCase();
-    hexCorner.innerHTML = `ACCESS :: GRANTED<br><span style="color:var(--text-dim);font-size:9px">${h()}:${h()}:${h()}:${h()}</span>`;
-  }, 2200);
 </script>
 </body>
 </html>
